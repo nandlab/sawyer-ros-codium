@@ -34,8 +34,14 @@ RUN printf '\
             {\n\
                  "name": "Gazebo",\n\
                  "color": "orange",\n\
-                 "signleInstance": true,\n\
+                 "singleInstance": true,\n\
                  "command": "roslaunch sawyer_gazebo sawyer_world.launch electric_gripper:=true",\n\
+            },\n\
+            {\n\
+                 "name": "RQt",\n\
+                 "color": "lightblue",\n\
+                 "singleInstance": true,\n\
+                 "command": "rqt"\n\
             }\n\
         ]\n\
     }\n\
