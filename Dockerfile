@@ -42,4 +42,4 @@ RUN printf '\
 }\n\
 ' > ~/.config/VSCodium/User/settings.json
 
-CMD ["/bin/bash", "--login"]
+CMD ["sh", "-lc", "export $(dbus-launch) && codium ros_ws && bash"]
