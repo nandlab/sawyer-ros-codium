@@ -11,4 +11,5 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
     network_mode: host
+    ipc: host
     privileged: true
